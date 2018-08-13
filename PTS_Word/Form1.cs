@@ -12,9 +12,18 @@ namespace PTS_Word
 {
     public partial class Form1 : Form
     {
+        private static Dictionary<string, List<string>> dict_bi_prefix;
+        private static Dictionary<string, List<string>> dict_bi_suffix;
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dict_bi_prefix = new Dictionary<string, List<string>>();
+            dict_bi_suffix = new Dictionary<string, List<string>>();
         }
 
         private void textBox_idiom1_Click(object sender, EventArgs e)
@@ -82,5 +91,36 @@ namespace PTS_Word
                 richTextBox_idiom_msg.Text = ex.Message;
             }
         }
+
+        private void radioButton_word_1to4_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox_word_c0.Location = new Point(193, 47);
+            textBox_word_c1.Location = new Point(35, 157);
+            textBox_word_c2.Location = new Point(141, 157);
+            textBox_word_c3.Location = new Point(247, 157);
+            textBox_word_c4.Location = new Point(353, 157);
+
+        }
+
+        private void radioButton_word_4to1_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox_word_c0.Location = new Point(193, 157);
+            textBox_word_c1.Location = new Point(35, 47);
+            textBox_word_c2.Location = new Point(141, 47);
+            textBox_word_c3.Location = new Point(247, 47);
+            textBox_word_c4.Location = new Point(353, 47);
+        }
+
+        private void button_word_question_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_word_answer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
