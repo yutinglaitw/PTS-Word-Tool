@@ -1,5 +1,5 @@
-# PTS_Word_Tools
-公視節目《一字千金》查詢小工具
+# PTS Word Tool
+公視節目《一字千金》查詢工具
 
 ![](./screenshots/demo.jpg)
 
