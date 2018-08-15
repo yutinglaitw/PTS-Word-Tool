@@ -38,29 +38,29 @@
             this.richTextBox_idiom_msg = new System.Windows.Forms.RichTextBox();
             this.button_idiom_search = new System.Windows.Forms.Button();
             this.tabPage_word_search = new System.Windows.Forms.TabPage();
-            this.label_word = new System.Windows.Forms.Label();
-            this.button_word_question = new System.Windows.Forms.Button();
-            this.button_word_answer = new System.Windows.Forms.Button();
-            this.textBox_word_c0 = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox_word_c1 = new System.Windows.Forms.TextBox();
+            this.textBox_word_c0 = new System.Windows.Forms.TextBox();
             this.textBox_word_c2 = new System.Windows.Forms.TextBox();
             this.textBox_word_c3 = new System.Windows.Forms.TextBox();
             this.textBox_word_c4 = new System.Windows.Forms.TextBox();
-            this.radioButton_word_1to4 = new System.Windows.Forms.RadioButton();
-            this.radioButton_word_4to1 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.button_word_answer = new System.Windows.Forms.Button();
+            this.button_word_question = new System.Windows.Forms.Button();
+            this.richTextBox_word = new System.Windows.Forms.RichTextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton_word_4to1 = new System.Windows.Forms.RadioButton();
+            this.radioButton_word_1to4 = new System.Windows.Forms.RadioButton();
+            this.label_word = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage_idiom_search.SuspendLayout();
             this.tabPage_word_search.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -180,7 +180,7 @@
             this.tabPage_word_search.Controls.Add(this.groupBox4);
             this.tabPage_word_search.Controls.Add(this.groupBox3);
             this.tabPage_word_search.Controls.Add(this.groupBox2);
-            this.tabPage_word_search.Controls.Add(this.richTextBox1);
+            this.tabPage_word_search.Controls.Add(this.richTextBox_word);
             this.tabPage_word_search.Controls.Add(this.groupBox1);
             this.tabPage_word_search.Controls.Add(this.label_word);
             this.tabPage_word_search.Location = new System.Drawing.Point(4, 22);
@@ -191,48 +191,41 @@
             this.tabPage_word_search.Text = "《字字珠璣》查詢";
             this.tabPage_word_search.UseVisualStyleBackColor = true;
             // 
-            // label_word
+            // groupBox4
             // 
-            this.label_word.AutoSize = true;
-            this.label_word.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label_word.Location = new System.Drawing.Point(27, 31);
-            this.label_word.Name = "label_word";
-            this.label_word.Size = new System.Drawing.Size(158, 31);
-            this.label_word.TabIndex = 7;
-            this.label_word.Text = "《字字珠璣》";
+            this.groupBox4.Controls.Add(this.richTextBox2);
+            this.groupBox4.Location = new System.Drawing.Point(546, 80);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(152, 74);
+            this.groupBox4.TabIndex = 21;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "規則說明";
             // 
-            // button_word_question
+            // richTextBox2
             // 
-            this.button_word_question.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_word_question.Location = new System.Drawing.Point(17, 26);
-            this.button_word_question.Name = "button_word_question";
-            this.button_word_question.Size = new System.Drawing.Size(120, 37);
-            this.button_word_question.TabIndex = 8;
-            this.button_word_question.Text = "隨機出題";
-            this.button_word_question.UseVisualStyleBackColor = true;
-            this.button_word_question.Click += new System.EventHandler(this.button_word_question_Click);
+            this.richTextBox2.BackColor = System.Drawing.SystemColors.Window;
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Location = new System.Drawing.Point(19, 24);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
+            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBox2.Size = new System.Drawing.Size(119, 37);
+            this.richTextBox2.TabIndex = 22;
+            this.richTextBox2.Text = "寫出能與四個提示字形成兩字詞語的字";
             // 
-            // button_word_answer
+            // groupBox3
             // 
-            this.button_word_answer.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button_word_answer.Location = new System.Drawing.Point(18, 75);
-            this.button_word_answer.Name = "button_word_answer";
-            this.button_word_answer.Size = new System.Drawing.Size(119, 37);
-            this.button_word_answer.TabIndex = 9;
-            this.button_word_answer.Text = "搜尋答案";
-            this.button_word_answer.UseVisualStyleBackColor = true;
-            this.button_word_answer.Click += new System.EventHandler(this.button_word_answer_Click);
-            // 
-            // textBox_word_c0
-            // 
-            this.textBox_word_c0.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox_word_c0.Font = new System.Drawing.Font("華康正顏楷體W5", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox_word_c0.Location = new System.Drawing.Point(193, 47);
-            this.textBox_word_c0.MaxLength = 1;
-            this.textBox_word_c0.Name = "textBox_word_c0";
-            this.textBox_word_c0.Size = new System.Drawing.Size(82, 87);
-            this.textBox_word_c0.TabIndex = 10;
-            this.textBox_word_c0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.groupBox3.Controls.Add(this.textBox_word_c1);
+            this.groupBox3.Controls.Add(this.textBox_word_c0);
+            this.groupBox3.Controls.Add(this.textBox_word_c2);
+            this.groupBox3.Controls.Add(this.textBox_word_c3);
+            this.groupBox3.Controls.Add(this.textBox_word_c4);
+            this.groupBox3.Location = new System.Drawing.Point(58, 80);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(468, 275);
+            this.groupBox3.TabIndex = 20;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "題目";
             // 
             // textBox_word_c1
             // 
@@ -245,6 +238,18 @@
             this.textBox_word_c1.Size = new System.Drawing.Size(82, 87);
             this.textBox_word_c1.TabIndex = 11;
             this.textBox_word_c1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox_word_c0
+            // 
+            this.textBox_word_c0.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBox_word_c0.Font = new System.Drawing.Font("華康正顏楷體W5", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox_word_c0.Location = new System.Drawing.Point(193, 47);
+            this.textBox_word_c0.MaxLength = 1;
+            this.textBox_word_c0.Name = "textBox_word_c0";
+            this.textBox_word_c0.ReadOnly = true;
+            this.textBox_word_c0.Size = new System.Drawing.Size(82, 87);
+            this.textBox_word_c0.TabIndex = 10;
+            this.textBox_word_c0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_word_c2
             // 
@@ -282,6 +287,72 @@
             this.textBox_word_c4.TabIndex = 14;
             this.textBox_word_c4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button_word_answer);
+            this.groupBox2.Controls.Add(this.button_word_question);
+            this.groupBox2.Location = new System.Drawing.Point(546, 229);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(152, 126);
+            this.groupBox2.TabIndex = 19;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "功能按鈕";
+            // 
+            // button_word_answer
+            // 
+            this.button_word_answer.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_word_answer.Location = new System.Drawing.Point(18, 75);
+            this.button_word_answer.Name = "button_word_answer";
+            this.button_word_answer.Size = new System.Drawing.Size(119, 37);
+            this.button_word_answer.TabIndex = 9;
+            this.button_word_answer.Text = "搜尋答案";
+            this.button_word_answer.UseVisualStyleBackColor = true;
+            this.button_word_answer.Click += new System.EventHandler(this.button_word_answer_Click);
+            // 
+            // button_word_question
+            // 
+            this.button_word_question.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_word_question.Location = new System.Drawing.Point(17, 26);
+            this.button_word_question.Name = "button_word_question";
+            this.button_word_question.Size = new System.Drawing.Size(120, 37);
+            this.button_word_question.TabIndex = 8;
+            this.button_word_question.Text = "隨機出題";
+            this.button_word_question.UseVisualStyleBackColor = true;
+            this.button_word_question.Click += new System.EventHandler(this.button_word_question_Click);
+            // 
+            // richTextBox_word
+            // 
+            this.richTextBox_word.BackColor = System.Drawing.Color.White;
+            this.richTextBox_word.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.richTextBox_word.Location = new System.Drawing.Point(58, 373);
+            this.richTextBox_word.Name = "richTextBox_word";
+            this.richTextBox_word.Size = new System.Drawing.Size(640, 95);
+            this.richTextBox_word.TabIndex = 18;
+            this.richTextBox_word.TabStop = false;
+            this.richTextBox_word.Text = "";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButton_word_4to1);
+            this.groupBox1.Controls.Add(this.radioButton_word_1to4);
+            this.groupBox1.Location = new System.Drawing.Point(546, 165);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(152, 52);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "題型選擇";
+            // 
+            // radioButton_word_4to1
+            // 
+            this.radioButton_word_4to1.AutoSize = true;
+            this.radioButton_word_4to1.Location = new System.Drawing.Point(83, 24);
+            this.radioButton_word_4to1.Name = "radioButton_word_4to1";
+            this.radioButton_word_4to1.Size = new System.Drawing.Size(59, 16);
+            this.radioButton_word_4to1.TabIndex = 16;
+            this.radioButton_word_4to1.Text = "四對一";
+            this.radioButton_word_4to1.UseVisualStyleBackColor = true;
+            this.radioButton_word_4to1.CheckedChanged += new System.EventHandler(this.radioButton_word_4to1_CheckedChanged);
+            // 
             // radioButton_word_1to4
             // 
             this.radioButton_word_1to4.AutoSize = true;
@@ -295,85 +366,15 @@
             this.radioButton_word_1to4.UseVisualStyleBackColor = true;
             this.radioButton_word_1to4.CheckedChanged += new System.EventHandler(this.radioButton_word_1to4_CheckedChanged);
             // 
-            // radioButton_word_4to1
+            // label_word
             // 
-            this.radioButton_word_4to1.AutoSize = true;
-            this.radioButton_word_4to1.Location = new System.Drawing.Point(83, 24);
-            this.radioButton_word_4to1.Name = "radioButton_word_4to1";
-            this.radioButton_word_4to1.Size = new System.Drawing.Size(59, 16);
-            this.radioButton_word_4to1.TabIndex = 16;
-            this.radioButton_word_4to1.Text = "四對一";
-            this.radioButton_word_4to1.UseVisualStyleBackColor = true;
-            this.radioButton_word_4to1.CheckedChanged += new System.EventHandler(this.radioButton_word_4to1_CheckedChanged);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButton_word_4to1);
-            this.groupBox1.Controls.Add(this.radioButton_word_1to4);
-            this.groupBox1.Location = new System.Drawing.Point(546, 165);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(152, 52);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "題型選擇";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.White;
-            this.richTextBox1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.richTextBox1.Location = new System.Drawing.Point(58, 373);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(640, 95);
-            this.richTextBox1.TabIndex = 18;
-            this.richTextBox1.TabStop = false;
-            this.richTextBox1.Text = "";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.button_word_answer);
-            this.groupBox2.Controls.Add(this.button_word_question);
-            this.groupBox2.Location = new System.Drawing.Point(546, 229);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(152, 126);
-            this.groupBox2.TabIndex = 19;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "功能按鈕";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.textBox_word_c1);
-            this.groupBox3.Controls.Add(this.textBox_word_c0);
-            this.groupBox3.Controls.Add(this.textBox_word_c2);
-            this.groupBox3.Controls.Add(this.textBox_word_c3);
-            this.groupBox3.Controls.Add(this.textBox_word_c4);
-            this.groupBox3.Location = new System.Drawing.Point(58, 80);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(468, 275);
-            this.groupBox3.TabIndex = 20;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "題目";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.richTextBox2);
-            this.groupBox4.Location = new System.Drawing.Point(546, 80);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(152, 74);
-            this.groupBox4.TabIndex = 21;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "規則說明";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Location = new System.Drawing.Point(19, 24);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox2.Size = new System.Drawing.Size(119, 37);
-            this.richTextBox2.TabIndex = 22;
-            this.richTextBox2.Text = "寫出能與四個提示字形成兩字詞語的字";
+            this.label_word.AutoSize = true;
+            this.label_word.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label_word.Location = new System.Drawing.Point(27, 31);
+            this.label_word.Name = "label_word";
+            this.label_word.Size = new System.Drawing.Size(158, 31);
+            this.label_word.TabIndex = 7;
+            this.label_word.Text = "《字字珠璣》";
             // 
             // Form1
             // 
@@ -389,12 +390,12 @@
             this.tabPage_idiom_search.PerformLayout();
             this.tabPage_word_search.ResumeLayout(false);
             this.tabPage_word_search.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -426,7 +427,7 @@
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBox_word;
     }
 }
 
