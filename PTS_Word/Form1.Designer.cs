@@ -88,7 +88,7 @@
             this.tabPage_idiom_search.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage_idiom_search.Size = new System.Drawing.Size(752, 512);
             this.tabPage_idiom_search.TabIndex = 0;
-            this.tabPage_idiom_search.Text = "《隻字片語》查詢";
+            this.tabPage_idiom_search.Text = "《隻字片語》";
             this.tabPage_idiom_search.UseVisualStyleBackColor = true;
             // 
             // label_idiom
@@ -188,7 +188,7 @@
             this.tabPage_word_search.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage_word_search.Size = new System.Drawing.Size(752, 512);
             this.tabPage_word_search.TabIndex = 1;
-            this.tabPage_word_search.Text = "《字字珠璣》查詢";
+            this.tabPage_word_search.Text = "《字字珠璣》";
             this.tabPage_word_search.UseVisualStyleBackColor = true;
             // 
             // groupBox4
