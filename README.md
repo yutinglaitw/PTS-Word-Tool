@@ -1,6 +1,5 @@
 # PTS Word Tool
 公視節目《一字千金》查詢工具
-
 ![](./screenshots/demo.jpg)
 
 ## 功能
@@ -10,9 +9,6 @@
 - 《字字珠璣》
    - 隨機出題: 隨機出四字題目，支援一對四、四對一兩種題型
    - 答案匹配: 搜尋符合指定條件的字
-   
-## Todo
-- 減少《字字珠璣》隨機出題抽中罕見字詞的機率
-- 加入《字有發揮》
-- 加入《成雙成對》
-- 增加遊戲功能
+
+## 可執行檔下載
+V1.0 https://github.com/yutinglaitw/PTS-Word-Tool/releases/download/v1.0/PTS_Word.zip
