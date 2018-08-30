@@ -1,5 +1,6 @@
 # PTS Word Tool
-公視節目《一字千金》查詢工具
+公視節目《一字千金》查詢工具，使用辭典為《重編國語辭典 修訂本》與《成語典》
+
 ![](./screenshots/demo.jpg)
 
 ## 功能
@@ -12,3 +13,6 @@
 
 ## 可執行檔下載
 V1.0 https://github.com/yutinglaitw/PTS-Word-Tool/releases/download/v1.0/PTS_Word.zip
+
+## 參考
+- 教育部國語辭典公眾授權網 http://resources.publicense.moe.edu.tw/
